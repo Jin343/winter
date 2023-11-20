@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter</title>
+    <link rel="stylesheet" href="HotTours.css">
+    <link rel="stylesheet" href="F1.css">
+    <style>
+        .gallery{
+            display: flex;
+        }
+        .gallery .container{
+        width:90%;
+    margin: 40px auto;
+        }
+        .gallery .container ul{
+            padding:0 ;
+            margin:0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery .container >ul{
+            display: flex;
+            flex-wrap: wrap;
+            /* grid-template-columns: repeat(auto-fit,minmax(300px ,1fr)); */
+        }
+            .gallery .container >ul> li{
+                flex-grow: 1;
+                position: relative;
+                height: 280px;
+                width: 300px;
+            margin:5px ;
+            font-size: 25px;
+            color:rgb(103, 134, 192);
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+.gallery .container >ul> li:nth-child(1){
+background-image: url("https://www.themayor.eu/web/files/articles/4332/main_image/thumb_1024x663_Ski.jpg");
+
+}
+        .gallery .container >ul> li:nth-child(2){
+            background-image: url("https://www.jetsetter.com//uploads/sites/7/2018/04/7Np69-pW-1380x690.jpeg")
+        }
+        .gallery .container >ul> li:nth-child(2){
+            background-image: url("https://www.jetsetter.com//uploads/sites/7/2018/04/7Np69-pW-1380x690.jpeg")
+        }
+        .gallery .container >ul> li:nth-child(3){
+            background-image: url("https://brundage.com/content/uploads/2023/09/210105jjw-126-scaled.jpg")
+        }
+        .gallery .container >ul> li:nth-child(4){
+            background-image: url("https://www.redlodgemountain.com/wp-content/uploads/header.img-smiling-woman-skiing-light-powder-with-blue-skies-and-sunshine-red-lodge-mountain-montana.jpg")
+        }
+        .gallery .container >ul> li:nth-child(5){
+            background-image: url("https://www.mensjournal.com/.image/t_share/MTk2MTM2MDMxNjg0OTI4NjU3/3-red-mountain-british-columbia.jpg")
+        }
+        .gallery .container >ul> li:nth-child(6){
+            background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/america-s-most-amazing-ski-resort-lead-1674231995.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*");
+        }
+        .gallery .container >ul> li:nth-child(7){
+            background-image: url("https://www.travelandleisure.com/thmb/eLbEhYjdVMES874m9B5PVHq-7ZU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/header-whitefish-mountain-resort-montana-NEWSKIMT1121-5a607e69e46c4971939a51cce0e9dd0f.jpg")
+        }
+        .gallery .container >ul> li:nth-child(8){
+            background-image: url("https://www.mensjournal.com/.image/t_share/MTk2MTM3MDM5MTE5NTI1Mzgx/screen-shot-2017-08-23-at-41420-pm.png")
+        }
+        .gallery .container >ul> li:nth-child(9){
+            background-image: url("https://www.usnews.com/object/image/00000183-f07e-d38d-adeb-fb7f66e30000/whitefish-mountain-resort.jpg?update-time=1666187403434&size=responsiveFlow640")
+        }
+        .gallery .container >ul> li{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .gallery .container >ul> li i{
+            transform: scale(0);
+            transition: transform 0.3s;
+        }
+        .gallery .container >ul> li:hover i{
+            transform: scale(1);
+    
+        }
+        .gallery .container >ul> li::before{
+            content: "";
+    height: 100%;
+    width: 100%;
+    top:0;
+    background-color:rgba(220, 20, 60, 0);
+    position: absolute;
+    cursor: pointer;
+    transition:background-color 0.3s;
+        }
+        .gallery .container >ul> li:hover::before{
+    background-color:rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/73d5e9ffaa.js" crossorigin="anonymous"></script>
+
+<body>
+    <div class="header" style="position: sticky;">
+        <div class="container">
+            <h3>Win<span>ter</span></h3>
+            <div class="links">
+                <i class=" icon fa-solid fa-bars-staggered"></i>
+                <ul>
+                    <li class="link"><a href="index.html">Home</a></li>
+                    <div class="about-list show">
+                        <li class=" about">About <span><i class="fa-solid fa-chevron-down"></i></span></li>
+                        <ul class="about-menu">
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our History</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Testimonials</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our Team</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>FAQ Page</span></li>
+                        </ul>
+                    </div>
+                    <details class="about-list hidden">
+                        <summary class=" about">About <span><i class="fa-solid fa-chevron-down"></i></span></summary>
+                        <ul class="about-menu">
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our History</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Testimonials</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our Team</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>FAQ Page</span></li>
+                        </ul>
+                    </details>
+                    <li class="link"><a href="HotTours.html">Hot tours</a></li>
+                    <li class="link"><a href="#">Blog</a></li>
+                    <li class="link"><a href="Schedule.html">Schedule</a></li>
+                    <li class="link" style="background-color:rgb(5, 59, 95)"><a  style="color:white" href="Gallery.html">Gallery</a></li>
+                    <li class="link"><a href="Contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="catg">
+        <div class="container">
+            <div class="text">
+                <h3>Gallery</h3>
+                <p> <span><a href="index.html">Home</a></span> → <span>Gallery</span></p>
+            </div>
+            <div class="img">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+  <div class="gallery underline">
+    <div class="container">
+        <div class="text">
+            <h3 class="mean-h3">Gallery</h3>
+           </div>
+        <ul>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="copyRights req-div">
+    <span><i class="fa-regular fa-heart"></i></span>
+    <p>© 2021 All Rights Reserved Terms of Use and Privacy Policy.</p>
+</div>
+</body>
+
+</html>

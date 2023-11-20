@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter</title>
+    <link rel="stylesheet" href="HotTours.css">
+    <link rel="stylesheet" href="F1.css">
+    <style>
+ 
+        .Contacts {
+            display: flex;
+        }
+
+        .Contacts .container {
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        label {
+            color: rgb(138, 138, 138);
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputs label {
+            font-size: 15px;
+            padding: 10px 0;
+        }
+
+        .inputs label+input {
+            outline: none;
+            padding: 15px 20px;
+            border: 1px solid grey;
+        }
+
+        .button {
+            width: 200px;
+            margin: 15px 0;
+            border: none;
+            color: white;
+            font-weight: bold;
+            background-color: color(srgb 0.8595 0.218 0.2354);
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: color(srgb 0.012 0.2234 0.3474);
+        }
+
+   
+        .item .text p {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .item .text {
+            position: relative;
+            padding: 2px;
+            margin-bottom: 20px;
+        }
+
+        .item .text::before,
+        .item .text::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            background-color: grey;
+        }
+
+        .item .text::after {
+            width: 20%;
+            background-color: color(srgb 0.8595 0.218 0.2354);
+        }
+
+        .item ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .item ul li {
+            font-size:20px;
+            padding-left: 10px;
+        }
+
+        .Contacts .container {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Contacts .container .section1 {
+            padding: 0 3% 0 0;
+        }
+        .Contacts .container .section1 {
+            width:65%;
+        }
+            .Contacts .container .section2{
+            width:35%;
+        }
+        @media (max-width:767px){
+            .button {
+            width: 150px;}
+            .inputs label {
+            font-size: 13px;}
+            .Contacts .container .section1 ,    .Contacts .container .section2{
+            width:100%;
+        }
+        }
+        .icons {
+            display: flex;
+            justify-content:start;
+        }
+        .icons p{
+            margin: 0;
+padding: 0;
+padding-left: 10px;
+        }
+        .icons p,.icons i{
+            font-size: 15px;
+            cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: color 0.3s;
+        }
+        .icons p,.icons i:hover{
+            color:color(srgb 0.8595 0.218 0.2354)
+        }
+        .icons >i{
+            font-size: 25px;
+            color:color(srgb 0.8595 0.218 0.2354);
+        }
+        .icons p{
+            font-weight: lighter;
+            font-size: 15px;
+            color:rgb(41, 41, 41);
+        }
+        .email a{
+            color:color(srgb 0.8595 0.218 0.2354);
+        }
+        iframe{
+            width:100%
+        }
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/73d5e9ffaa.js" crossorigin="anonymous"></script>
+
+<body>
+    <div class="header" style="position: sticky;">
+        <div class="container">
+            <h3>Win<span>ter</span></h3>
+            <div class="links">
+                <i class=" icon fa-solid fa-bars-staggered"></i>
+                <ul>
+                    <li class="link"><a href="F1.html">Home</a></li>
+                    <div class="about-list show">
+                        <li class=" about">About <span><i class="fa-solid fa-chevron-down"></i></span></li>
+                        <ul class="about-menu">
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our History</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Testimonials</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our Team</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>FAQ Page</span></li>
+                        </ul>
+                    </div>
+                    <details class="about-list hidden">
+                        <summary class=" about">About <span><i class="fa-solid fa-chevron-down"></i></span></summary>
+                        <ul class="about-menu">
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our History</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Testimonials</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our Team</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>FAQ Page</span></li>
+                        </ul>
+                    </details>
+                    <li class="link"><a href="HotTours.html">Hot tours</a></li>
+                    <li class="link"><a href="#">Blog</a></li>
+                    <li class="link"><a href="Schedule.html">Schedule</a></li>
+                    <li class="link"><a href="Gallery.html">Gallery</a></li>
+                    <li class="link" style="background-color:rgb(5, 59, 95)"><a style="color:white"
+                            href="Contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="catg">
+        <div class="container">
+            <div class="text">
+                <h3>Contacts</h3>
+                <p> <span><a href="F1.html">Home</a></span> → <span>Contacts</span></p>
+            </div>
+            <div class="img">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="Contacts underline">
+        <div class="container">
+            <div class="section1">
+                <div class="text">
+                    <h3 class="mean-h3">Get in Touch</h3>
+                    <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email.
+                        You can also use a quick contact form below or visit our office personally.
+                        <br>
+                        We would be happy to answer your questions.
+                    </p>
+                </div>
+                <form class="inputs">
+                    <label for="req" class="open">Name</label>
+                    <input required type="text">
+                    <label for="req">Email</label>
+                    <input type="Email">
+                    <label for="">Adress</label>
+                    <input type="text">
+                    <label for="req">Content</label>
+                    <input type="text" ">
+            <button class=" button">Send Massege</button>
+                </form>
+            </div>
+            <div class="section2">
+                <div class="item">
+                    <div class="text">
+                        <p>Socials</p>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-youtube"></i></li>
+                            <li><i class="fa-brands fa-x-twitter"></i></li>
+                            <li><i class="fa-brands fa-google"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <p>Phones</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-phone"></i>
+                        <p> 1-800-1234-567, 1-800-6547-321</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <p>E-mail</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p class="email"><a href="">info@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <p>Address</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>2130 Fulton Street San Diego,  CA 94117-1080 USA</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">
+                        <p>Opening Hours</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p> Mon-Fri: 8:00am–6:00pm Sat: 10:00am–4:00pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170936.00359405266!2d-106.39832971977252!3d39.73898097469157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a72a10da5db2f%3A0xc6a0c68913072915!2sEagles%20Nest!5e0!3m2!1sen!2s!4v1695651298096!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="copyRights req-div">
+        <span><i class="fa-regular fa-heart"></i></span>
+        <p>© 2021 All Rights Reserved Terms of Use and Privacy Policy.</p>
+    </div></body>
+
+</html>

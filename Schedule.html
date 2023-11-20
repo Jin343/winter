@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter</title>
+    <link rel="stylesheet" href="HotTours.css">
+    <link rel="stylesheet" href="F1.css">
+    <style>
+
+        .schedule{
+            display: flex;
+        }
+        .schedule .container{
+        width:80%;
+    margin: 40px auto;
+        }
+        .schedule .container ul{
+            height: 100%;
+            padding:0 ;
+            margin:0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .schedule .container >ul{
+            display: flex;
+            flex-direction: column;
+        }
+            .schedule .container >ul> li{
+            font-size: 17px;
+            color: white;
+            background-color:color(srgb 0.8595 0.218 0.2354) ;
+        }
+        .schedule .container >ul> li:not(:first-child){
+            font-size: 15px;
+            border-top:1px solid rgb(255, 255, 255);
+            background-color: rgb(75, 126, 255);
+            color:white;
+        }
+        .schedule .container ul li ul{
+            font-size: 15px;
+            font-weight: bold;
+            width:70%;
+            margin: 0 auto;
+            padding:0 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @media (max-width:1039px){
+                    .schedule .container ul li ul{
+                        width:90%
+                    }
+        }
+        .schedule .container >ul> li{
+            height: 60px;
+        }
+        .schedule .container >ul> li:nth-child(1){
+            height: 40px;
+        }
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/73d5e9ffaa.js" crossorigin="anonymous"></script>
+
+<body>
+    <div class="header" style="position: sticky;">
+        <div class="container">
+            <h3>Win<span>ter</span></h3>
+            <div class="links">
+                <i class=" icon fa-solid fa-bars-staggered"></i>
+                <ul>
+                    <li class="link"><a href="index.html">Home</a></li>
+                    <div class="about-list show">
+                        <li class=" about">About <span><i class="fa-solid fa-chevron-down"></i></span></li>
+                        <ul class="about-menu">
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our History</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Testimonials</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our Team</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>FAQ Page</span></li>
+                        </ul>
+                    </div>
+                    <details class="about-list hidden">
+                        <summary class=" about">About <span><i class="fa-solid fa-chevron-down"></i></span></summary>
+                        <ul class="about-menu">
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our History</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Testimonials</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>Our Team</span></li>
+                            <li><span><i class="fa-solid fa-chevron-right"></i></span><span>FAQ Page</span></li>
+                        </ul>
+                    </details>
+                    <li class="link"><a href="HotTours.html">Hot tours</a></li>
+                    <li class="link"><a href="#">Blog</a></li>
+                    <li class="link"   style="background-color:rgb(5, 59, 95)"><a style="color:white" href="Schedule.html">Schedule</a></li>
+                    <li class="link"><a href="Gallery.html">Gallery</a></li>
+                    <li class="link"><a href="Contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="catg">
+        <div class="container">
+            <div class="text">
+                <h3>Schedule</h3>
+                <p> <span><a href="index.html">Home</a></span> → <span>Schedule</span></p>
+            </div>
+            <div class="img">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="schedule underline">
+        <div class="container">
+            <div class="text">
+                <h3 class="mean-h3">Tour Schedule</h3>
+               </div>
+            <ul>
+                <li>
+                    <ul>
+                        <li>activity</li>
+                        <li>activity</li>
+                        <li>activity</li>
+                        <li>activity</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                        <li>four</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                        <li>four</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                        <li>four</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                        <li>four</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyRights req-div">
+        <span><i class="fa-regular fa-heart"></i></span>
+        <p>© 2021 All Rights Reserved Terms of Use and Privacy Policy.</p>
+    </div>
+</body>
+
+</html>
