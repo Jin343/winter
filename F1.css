@@ -259,13 +259,13 @@ a[href="#"]:hover{
     transition: opacity 0.5s, visibility 0.5s;
 }
 
-.about-list:hover .about-menu,.clicked-list .about-menu{
+.clicked-list .about-menu{
     border-top: 4px solid #4f7fc9;
     height: 140px;
     padding:10px;
 }
 
-.about-list:hover .about-menu::before ,.clicked-list .about-menu::before{
+.clicked-list .about-menu::before{
     opacity: 1;
     visibility: visible;
 }
