@@ -198,8 +198,11 @@ h3,h4 {
 @media(max-width:767px){
     .intro .container {
         height: 400px;}
+        .intro .container .text p{
+            margin: 10px 0;
+        }
     .intro .container .text{
-        width: 90%;
+        width: 80%;
             }
             .intro .container .text h4 {
                 font-size: 25px;
@@ -1119,4 +1122,13 @@ font-size: 25px;}
         font-size: 35px;
     }
    
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #024671;
+    border-radius: 6px;
 }

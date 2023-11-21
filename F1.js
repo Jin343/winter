@@ -61,6 +61,11 @@ links.addEventListener("click",()=>{
 })
 
 let aboutList =document.querySelector(".about-list")
+let isClicked=false
 aboutList.addEventListener("click",()=>{
+    if (!isClicked){
     aboutList.classList.add("clicked-list")
+    }else{
+    aboutList.classList.remove("clicked-list")
+    }
 })
