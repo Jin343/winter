@@ -64,8 +64,8 @@ let aboutList =document.querySelector(".about-list")
 let isClicked=false
 aboutList.addEventListener("click",()=>{
     if (!isClicked){
-    aboutList.classList.add("clicked-list")
+    aboutList.classList.add("clicked")
     }else{
-    aboutList.classList.remove("clicked-list")
+    aboutList.classList.remove("clicked")
     }
 })
