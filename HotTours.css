@@ -6,7 +6,7 @@
 .catg {
     overflow: hidden;
     position: relative;
-    height: 300px;
+    height: 250px;
     width: 100%;
     background-image: url("https://i.pinimg.com/originals/90/54/8c/90548c855ae1ff4f357000dc37ded417.jpg");
     background-repeat: no-repeat;
@@ -47,9 +47,6 @@
     font-size: 55px;
 }
 @media (max-width:1039px){
-    .catg{
-    height: 250px;
-    }
     .catg .container {
         width: 100%;
         font-size: 15px;
@@ -61,7 +58,7 @@
     }
 @media (max-width:767px){
         .catg{
-        height: 200px;
+        height: 170px;
         }
         .catg .text{
             height: 90%;
@@ -430,7 +427,7 @@ font-size: 30px !important;
 }
 @media (max-width:767px){
     .footer {
-        height:200px;
+        height:250px;
     } 
         .footer .container button a {
             font-size: 13px;
