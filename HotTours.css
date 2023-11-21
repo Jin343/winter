@@ -1,8 +1,10 @@
 .header {
+    position: sticky !important;
     background-color: rgb(14, 86, 134);
 }
 
 .catg {
+    overflow: hidden;
     position: relative;
     height: 300px;
     width: 100%;
@@ -81,19 +83,11 @@
     text-decoration: underline;
     color: rgb(201, 238, 255);
 }
-
 .sections .container {
+    overflow: hidden;
     display: flex;
     width: 90%;
     margin: 0 auto;
-}
-
-@media (max-width:790px) {
-    .sections .container {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
 }
 
 .sec1 {
@@ -128,17 +122,7 @@
         padding: 0;
     }
 }
-@media (max-width:767px){
-    .sections .container:first-child{
-        padding:30px 0 0 ;
-    }
-    .sections .container{
-        padding: 0;
-    }
-    .sec1,.sec2{
-        width: 100%;
-    }
-}
+
 .underline .container .text {
     width: 95%;
     margin-bottom: 30px;
@@ -209,7 +193,23 @@
 .sec1 .container ul li:nth-child(6) {
     background-image: url("https://www.mensjournal.com/.image/t_share/MTk2MTM3MDM5MTE5NTI1Mzgx/screen-shot-2017-08-23-at-41420-pm.png")
 }
-
+@media (max-width:767px){
+    .sections .container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .sections .container:first-child{
+        padding:30px 10px 0 10px ;
+    }
+    .sections .container{
+        padding: 0;
+    }
+    .sec1,.sec2{
+        width: 100%;
+    }
+    .sec1 .container .content ul {
+        grid-template-columns: repeat(1,1fr);}
+}
 .sec1 .container ul li::before {
     content: "";
     height: 100%;
@@ -362,6 +362,7 @@
     margin-top: 0;
 }
 @media (max-width:767px){
+    
     .mid .container .review .text p {
         font-size: 15px;
         line-height: 1.4;
