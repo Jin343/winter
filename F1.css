@@ -264,7 +264,6 @@ a[href="#"]:hover{
     height: 140px;
     padding:10px;
 }
-
 .clicked-list .about-menu::before{
     opacity: 1;
     visibility: visible;
@@ -307,7 +306,7 @@ a[href="#"]:hover{
         font-size: 15px;
         color: #1a628f;
     }
-    .about-list:hover .about-menu ,.clicked-list{
+    .clicked-list .about-menu{
         padding: 0;
         height: 120px;
         border-top-width: 0;
@@ -365,12 +364,12 @@ a[href="#"]:hover{
         transition: opacity 0.5s ease, visibility 0.5s linear;
     }
 
-    .links:hover>ul ,.clicked>ul{
+    .clicked>ul{
         opacity: 1;
         visibility: visible;
     }
 
-    .links:hover>ul::before ,.clicked>ul::before{
+    .clicked>ul::before{
         opacity: 1;
         visibility: visible;
     }
@@ -387,9 +386,9 @@ a[href="#"]:hover{
         color: #024671;
         transition: padding-left 0.5s;
     }
-    .links>ul .link:hover i {
+    .links>ul clicked i {
         padding-left: 15px;}
-    .links>ul .link:hover a {
+    .links>ul clicked a {
         color: #1a628f;
     }
 }
@@ -913,7 +912,7 @@ button {
         font-size: 13px;
     }
 .req-div p{
-    font-size: 12px;
+    font-size: 15px;
 }
     .request {
         z-index: 1000;
