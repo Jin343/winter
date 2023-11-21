@@ -426,6 +426,10 @@ font-size: 30px !important;
     text-decoration: none;
 }
 @media (max-width:767px){
+    .footer .container {
+        padding: 10px 0 !important;
+    justify-content: space-between;
+    }
     .footer {
         height:250px;
     } 
