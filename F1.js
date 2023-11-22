@@ -1,11 +1,4 @@
-let header = document.querySelector(".header")
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        header.style = "background-color:rgb(14, 100, 156)"
-    } else {
-        header.style = "background-color:rgb(0,0,0,0)"
-    }
-})
+
 // let request = document.querySelector(".request")
 // let input = document.querySelectorAll(".inputs input")
 // let button = document.querySelector(".inputs button")
