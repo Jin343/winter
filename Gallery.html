@@ -27,7 +27,7 @@
             display: flex;
             flex-wrap: wrap;
         }
-            .gallery .container >ul> a{
+            .gallery .container >ul> li{
                 text-decoration: none;
                 flex-grow: 1;
                 position: relative;
@@ -42,52 +42,52 @@
             align-items: center;
         }
 
-.gallery .container >ul> a:nth-child(1){
+.gallery .container >ul> li:nth-child(1){
 background-image: url("https://www.themayor.eu/web/files/articles/4332/main_image/thumb_1024x663_Ski.jpg");
 
 }
-        .gallery .container >ul> a:nth-child(2){
+        .gallery .container >ul> li:nth-child(2){
             background-image: url("https://www.jetsetter.com//uploads/sites/7/2018/04/7Np69-pW-1380x690.jpeg")
         }
-        .gallery .container >ul> a:nth-child(2){
+        .gallery .container >ul> li:nth-child(2){
             background-image: url("https://www.jetsetter.com//uploads/sites/7/2018/04/7Np69-pW-1380x690.jpeg")
         }
-        .gallery .container >ul> a:nth-child(3){
+        .gallery .container >ul> li:nth-child(3){
             background-image: url("https://brundage.com/content/uploads/2023/09/210105jjw-126-scaled.jpg")
         }
-        .gallery .container >ul> a:nth-child(4){
+        .gallery .container >ul> li:nth-child(4){
             background-image: url("https://www.redlodgemountain.com/wp-content/uploads/header.img-smiling-woman-skiing-light-powder-with-blue-skies-and-sunshine-red-lodge-mountain-montana.jpg")
         }
-        .gallery .container >ul> a:nth-child(5){
+        .gallery .container >ul> li:nth-child(5){
             background-image: url("https://www.mensjournal.com/.image/t_share/MTk2MTM2MDMxNjg0OTI4NjU3/3-red-mountain-british-columbia.jpg")
         }
-        .gallery .container >ul> a:nth-child(6){
+        .gallery .container >ul> li:nth-child(6){
             background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/america-s-most-amazing-ski-resort-lead-1674231995.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*");
         }
-        .gallery .container >ul> a:nth-child(7){
+        .gallery .container >ul> li:nth-child(7){
             background-image: url("https://www.travelandleisure.com/thmb/eLbEhYjdVMES874m9B5PVHq-7ZU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/header-whitefish-mountain-resort-montana-NEWSKIMT1121-5a607e69e46c4971939a51cce0e9dd0f.jpg")
         }
-        .gallery .container >ul> a:nth-child(8){
+        .gallery .container >ul> li:nth-child(8){
             background-image: url("https://www.mensjournal.com/.image/t_share/MTk2MTM3MDM5MTE5NTI1Mzgx/screen-shot-2017-08-23-at-41420-pm.png")
         }
-        .gallery .container >ul> a:nth-child(9){
+        .gallery .container >ul> li:nth-child(9){
             background-image: url("https://www.usnews.com/object/image/00000183-f07e-d38d-adeb-fb7f66e30000/whitefish-mountain-resort.jpg?update-time=1666187403434&size=responsiveFlow640")
         }
-        .gallery .container >ul> a{
+        .gallery .container >ul> li{
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .gallery .container >ul> a i{
+        .gallery .container >ul> li i{
             color:rgb(103, 134, 192);
             transform: scale(0);
             transition: transform 0.3s;
         }
         
-        .gallery .container >ul> a:hover i{
+        .gallery .container >ul> li:hover i{
             transform: scale(1);
     
         }
-        .gallery .container >ul> a::before{
+        .gallery .container >ul> li::before{
             content: "";
     height: 100%;
     width: 100%;
@@ -97,13 +97,13 @@ background-image: url("https://www.themayor.eu/web/files/articles/4332/main_imag
     cursor: pointer;
     transition:background-color 0.3s;
         }
-        .gallery .container >ul> a:hover::before{
+        .gallery .container >ul> li:hover::before{
     background-color:rgba(0, 0, 0, 0.6);
         }
         @media (min-width:767px){
-            .gallery .container >ul> a:hover i{
+            .gallery .container >ul> li:hover i{
             transform: scale(1);
-        }  .gallery .container >ul> a:hover::before{
+        }  .gallery .container >ul> li:hover::before{
     background-color:rgba(0, 0, 0, 0.6);
         }
         }
@@ -159,15 +159,15 @@ background-image: url("https://www.themayor.eu/web/files/articles/4332/main_imag
             <h3 class="mean-h3">Gallery</h3>
            </div>
         <ul>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
-            <a href="#"><i class="fa-solid fa-star"></i></a>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
         </ul>
     </div>
   </div>
@@ -178,7 +178,7 @@ background-image: url("https://www.themayor.eu/web/files/articles/4332/main_imag
 </div>
 </body>
 <script>
-    let image = document.querySelectorAll("ul a")
+    let image = document.querySelectorAll("ul li")
 let isClicked=false
     image.forEach((e)=>{{
         e.addEventListener("click",()=>{
