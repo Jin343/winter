@@ -82,6 +82,7 @@ background-image: url("https://www.themayor.eu/web/files/articles/4332/main_imag
             transform: scale(0);
             transition: transform 0.3s;
         }
+        
         .gallery .container >ul> a:hover i{
             transform: scale(1);
     
@@ -98,6 +99,20 @@ background-image: url("https://www.themayor.eu/web/files/articles/4332/main_imag
         }
         .gallery .container >ul> a:hover::before{
     background-color:rgba(0, 0, 0, 0.6);
+        }
+        @media (min-width:767px){
+            .gallery .container >ul> a:hover i{
+            transform: scale(1);
+        }  .gallery .container >ul> a:hover::before{
+    background-color:rgba(0, 0, 0, 0.6);
+        }
+        }
+        @media (max-width:767px){
+            .gallery .container >ul> clickedImage:hover i{
+            transform: scale(1);
+        }  .gallery .container >ul> clickedImage::before{
+    background-color:rgba(0, 0, 0, 0.6);
+        }
         }
     </style>
 </head>
@@ -162,6 +177,20 @@ background-image: url("https://www.themayor.eu/web/files/articles/4332/main_imag
     <p>© 2021 All Rights Reserved Terms of Use and Privacy Policy.</p>
 </div>
 </body>
-
+<script>
+    let image = document.querySelectorAll("ul a")
+let isClicked=false
+    image.forEach((e)=>{{
+        e.addEventListener("click",()=>{
+    if (!isClicked){
+        e.classList.add("clickedImage")
+    isClickedList=true
+    }else if(isClicked){
+    e.classList.remove("clickedImage")
+    isClicked=false
+    }
+        })
+    }})
+</script>
 <script src="F1.js"></script>
 </html>
