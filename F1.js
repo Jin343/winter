@@ -56,16 +56,26 @@ window.addEventListener("scroll", () => {
 // })
 
 let links =document.querySelector(".links");
-links.addEventListener("click",()=>{
+let button = document.querySelector(".links > i")
+let isClicked=false
+button.addEventListener("click",()=>{
+if (!isClicked){
     links.classList.add("clicked")
+ isClicked=true
+    }else if (isClicked){
+        links.classList.remove("clicked")
+ isClicked=false
+    }
 })
 
 let aboutList =document.querySelector(".about-list")
-let isClicked=false
+let isClickedList=false
 aboutList.addEventListener("click",()=>{
-    if (!isClicked){
-    aboutList.classList.add("clicked")
-    }else{
-    aboutList.classList.remove("clicked")
+    if (!isClickedList){
+    aboutList.classList.add("clicked-list")
+    isClickedList=true
+    }else if(isClickedList){
+    aboutList.classList.remove("clicked-list")
+    isClickedList=false
     }
 })
